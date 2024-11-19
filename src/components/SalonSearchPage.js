@@ -1,4 +1,4 @@
-// src/components/SalonSearchPage.js
+
 
 import React, { useState } from "react";
 import salonData from "./salonData"; // You can import salon data or fetch from API
