@@ -1,0 +1,39 @@
+.chair-selection {
+    padding: 20px;
+  }
+  
+  .chair-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .chair {
+    padding: 15px;
+    background-color: #f2f2f2;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .chair.selected {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .proceed-button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .proceed-button:hover {
+    background-color: #0b7dda;
+  }
+  

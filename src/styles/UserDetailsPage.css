@@ -1,0 +1,86 @@
+/* UserDetailsPage.css */
+
+/* Main container to center the form */
+.user-details-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Form container styling */
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading style */
+  .form-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Label for inputs */
+  .input-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Input field styling */
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  /* Input focus state */
+  .input-field:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Button styling */
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,212 @@
+/* Full-screen background with a high-quality black & white themed image */
+.opening-page {
+    background: url('../images/bggimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .caption {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+
+  /* Semi-transparent black overlay for readability */
+  .overlay {
+    background: rgba(0, 0, 0, 0.8); /* Black with high opacity */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Centering content box */
+  .content {
+    color: #fff;  /* White text for better contrast */
+    max-width: 600px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent black */
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Elegant brand name in bold */
+  .brand-name {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff; /* White text for brand name */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  /* Professional tagline with subtle design */
+  .tagline {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ddd; /* Slightly grayish-white for better contrast */
+  }
+  
+  /* Animated caption style */
+  .caption {
+    font-family: 'Montserrat', sans-serif; /* New stylish font */
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffeb3b; /* Bright yellow color for attention */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Soft shadow for a glowing effect */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeInSlideUp 3s ease-out; /* Add animation */
+  }
+  
+  /* Animation for the caption */
+  @keyframes fadeInSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Stylish, modern button with white background */
+  .enter-btn {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Full-width button for mobile */
+  }
+  
+  /* Button hover effect */
+  .enter-btn:hover {
+    background-color: #f1f1f1;
+    color: #333;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Bottom Navigation */
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Bottom navigation button style */
+  .nav-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 30%; /* Equal width buttons */
+  }
+  
+  /* Button hover effect for navigation */
+  .nav-btn:hover {
+    background-color: #ddd;
+    color: #333;
+    transform: scale(1.05);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .brand-name {
+      font-size: 2.5rem;
+    }
+  
+    .tagline {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+  
+    .caption {
+      font-size: 1.2rem; /* Adjust caption for mobile */
+    }
+  
+    .enter-btn {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  
+    .bottom-nav {
+      flex-direction: column; /* Stack buttons vertically */
+      padding: 20px;
+    }
+  
+    .nav-btn {
+      width: 100%; /* Full-width buttons */
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .brand-name {
+      font-size: 2rem;
+    }
+  
+    .tagline {
+      font-size: 0.9rem;
+    }
+  
+    .caption {
+      font-size: 1rem;
+    }
+  
+    .content {
+      padding: 20px;
+    }
+  
+    .enter-btn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  
+    .nav-btn {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  

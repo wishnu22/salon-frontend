@@ -1,0 +1,72 @@
+.detailed-page {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #000;
+    padding: 20px;
+  }
+  
+  .salon-info, .services-section, .artist-selection, .chairs-container, .reviews-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 5px 0;
+  }
+  
+  .chairs-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .chair {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .chair.available {
+    background-color: grey;
+  }
+  
+  .chair.selected {
+    background-color: green;
+    color: #fff;
+  }
+  
+  .chair.booked {
+    background-color: red;
+    color: #fff;
+    cursor: not-allowed;
+  }
+  
+  .book-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-button:hover {
+    background-color: #0056b3;
+  }
+  
